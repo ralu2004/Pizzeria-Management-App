@@ -1,0 +1,193 @@
+/* Global styles */
+body{
+    margin: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Centered heading */
+h1{
+    text-align: center;
+}
+
+/* Navbar styles */
+header{
+    background-color: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.narbar{
+    width: 100%;
+    position: fixed;
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color: hsl(0, 0%, 25%);
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color: hsl(0, 0%, 10%);
+}
+
+.navbar li{
+    float: left;
+}
+
+/* Shifts section */
+.shifts {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Individual shift items */
+.currentshift, .nextshift {
+    border: none; 
+    padding: 20px; 
+    width: 48%; 
+}
+
+/* Button and input styling */
+button, #i1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: aliceblue;
+    background-color: black;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Staff form styling */
+.staffform {
+    display: inline;
+    width: 300px;
+    height: 300px;
+}
+
+#homeform {
+    margin: 30px;
+}
+
+/* Box styling */
+#box {
+    border-color: black;
+    margin: 0.5%;
+}
+
+/* Popup */
+.popup {
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    position: relative;
+    z-index: 1000;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Table styling */
+table.order-activity {
+    width: 80%;
+    max-width: 800px;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead th {
+    background-color: #e0e0e0;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 12px 15px;
+    border-bottom: 2px solid #ccc;
+    word-wrap: break-word;
+    width:15%; 
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis
+}
+
+tbody td {
+    padding: 10px 15px;
+    color: #666;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f5f5f5;
+}
+
+tbody tr:hover {
+    background-color: #eaeaea;
+}
+
+td, th {
+    text-align: left;
+    vertical-align: middle;
+}
+
+ /* Tab navigation styles */
+ .tab {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.tab button {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 50%;
+    text-align: center;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    color: black;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tabcontent {
+    display: none; 
+    padding: 20px;
+    border-top: none;
+}
+
+.tabcontent.active {
+    display: block; 
+}
